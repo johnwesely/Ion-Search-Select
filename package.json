@@ -1,0 +1,32 @@
+{
+  "name": "ion-search-select",
+  "version": "1.0.0",
+  "description": "Search Select Component for Ionic Vue Apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnwesely/Ion-Search-Select.git"
+  },
+  "keywords": [
+    "Ionic",
+    "Vue"
+  ],
+  "author": "John Wesely",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnwesely/Ion-Search-Select/issues"
+  },
+  "homepage": "https://github.com/johnwesely/Ion-Search-Select#readme",
+  "dependencies": {
+    "@ionic/vue": "^6.2.2",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "bili": "^1.5.3",
+    "rollup-plugin-vue": "^6.0.0",
+    "vue-template-compiler": "^2.7.8"
+  }
+}
