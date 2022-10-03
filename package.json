@@ -3,12 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "main": "./dist/ion-search-select.umd.js",
-  "module": "./dist/ion-search-select.es.js",
+  "main": "./dist/ion-search-select.umd.cjs",
+  "module": "./dist/ion-search-select.js",
   "exports": {
     ".": {
-      "import": "./dist/ion-search-select.es.js",
-      "require": "./dist/ion-search-select.umd.js"
+      "import": "./dist/ion-search-select.js",
+      "require": "./dist/ion-search-select.umd.cjs"
     }
   },
   "scripts": {
