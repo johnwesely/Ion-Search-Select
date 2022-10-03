@@ -1,32 +1,30 @@
 {
   "name": "ion-search-select",
+  "private": true,
   "version": "1.0.0",
-  "description": "Search Select Component for Ionic Vue Apps",
-  "main": "index.js",
+  "type": "module",
+  "main": "./dist/ion-search-select.umd.js",
+  "module": "./dist/ion-search-select.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ion-search-select.es.js",
+      "require": "./dist/ion-search-select.umd.js"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/johnwesely/Ion-Search-Select.git"
-  },
-  "keywords": [
-    "Ionic",
-    "Vue"
-  ],
-  "author": "John Wesely",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/johnwesely/Ion-Search-Select/issues"
-  },
-  "homepage": "https://github.com/johnwesely/Ion-Search-Select#readme",
   "dependencies": {
     "@ionic/vue": "^6.2.2",
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.5"
   },
   "devDependencies": {
-    "bili": "^1.5.3",
-    "rollup-plugin-vue": "^6.0.0",
-    "vue-template-compiler": "^2.7.8"
+    "@vitejs/plugin-vue": "^3.1.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vue-tsc": "^0.40.4"
   }
 }
