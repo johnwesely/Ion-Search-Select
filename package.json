@@ -11,6 +11,7 @@
       "require": "./dist/ion-search-select.umd.cjs"
     }
   },
+  "files": ["*"],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
