@@ -26,7 +26,7 @@
     </ion-content>
 </template>
 
-<script lang="ts">
+<script>
     import { IonButton, IonInput, IonContent, IonHeader, IonTitle, IonToolbar, IonItem, IonLabel, modalController} from '@ionic/vue';
     import { computed, ref, toRef, defineComponent } from 'vue';
 
@@ -48,16 +48,16 @@
             fieldNameProp: String,
         },
 
-        setup(props: any) {
+        setup(props) {
             let searchQuery = ref('');
             const options = toRef(props, 'optionsProp').value;
             let selectedOption = ref(props.selectedOptionProp);
             const fieldName = toRef(props, 'fieldNameProp').value;
             
-            const searchOptions = (options: string[], value: string) => {
+            const searchOptions = (options, value) => {
                 if (!value) return options;
 
-                return options.filter((option: string) => {
+                return options.filter((option) => {
                     return (option.toLowerCase().includes(value));
                 });
             }

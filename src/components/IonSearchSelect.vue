@@ -13,13 +13,13 @@
     </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent, toRef } from "vue";
 import { modalController, IonIcon } from '@ionic/vue';
 import IonSearchSelectModal from "./IonSearchSelectModal.vue";
 import { caretDownOutline } from "ionicons/icons";
 import { addIcons } from "ionicons";
-import { useModelWrapper } from "./modelWrapper";
+import { useModelWrapper } from "../modelWrapper";
 
 addIcons({
     "caret-down-outline": caretDownOutline 
@@ -27,7 +27,7 @@ addIcons({
 
 export default defineComponent({
     name: 'IonSearchSelect',
-    components: {
+components: {
         IonIcon
     },
     props: {
@@ -35,7 +35,7 @@ export default defineComponent({
         fieldNameProp: String,
         modelValue: String
     },
-    setup(props: any, { emit }) {
+    setup(props, { emit }) {
         const options = toRef(props, 'optionsProp').value;
         const fieldName = toRef(props, 'fieldNameProp').value;
         let selectedOption =  useModelWrapper(props, emit, 'modelValue');

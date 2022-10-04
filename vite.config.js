@@ -6,8 +6,8 @@ import { resolve } from 'path';
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, "src/index.js"),
-      name: "ion-search-select",
+      entry: resolve(__dirname, "src/main.js"),
+      name: "search-select",
       filename: (format) => `${format}.js`,
     },
     rollupOptions: {

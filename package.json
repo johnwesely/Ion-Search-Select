@@ -1,31 +1,28 @@
 {
-  "name": "ion-search-select",
+  "name": "search-select",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.1",
   "type": "module",
-  "types": "./dist/types/index.d.ts",
-  "main": "./dist/ion-search-select.umd.cjs",
-  "module": "./dist/ion-search-select.js",
+  "main": "./dist/search-select.umd.cjs",
+  "module": "./dist/search-select.js",
   "exports": {
     ".": {
-      "import": "./dist/ion-search-select.js",
-      "require": "./dist/ion-search-select.umd.cjs"
+      "import": "./dist/search-select.js",
+      "require": "./dist/search-select.umd.cjs"
     }
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build && vue-tsc --emitDeclarationOnly && mv dist/src dist/types",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@ionic/vue": "^6.2.2",
     "vue": "^3.2.37",
+    "@ionic/vue": "^6.2.2",
     "vue-router": "^4.1.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.0",
-    "typescript": "^4.6.4",
-    "vite": "^3.1.0",
-    "vue-tsc": "^0.40.13"
+    "vite": "^3.1.0"
   }
 }
