@@ -1,17 +1,16 @@
 {
   "name": "ion-search-select",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.4",
   "type": "module",
-  "main": "./dist/ion-search-select.umd.cjs",
-  "module": "./dist/ion-search-select.js",
+  "main": "./src.main.js",
   "exports": {
     ".": {
       "import": "./dist/ion-search-select.js",
       "require": "./dist/ion-search-select.umd.cjs"
     }
   },
-  "files": ["*"],
+  "files": ["*", "dist"],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
