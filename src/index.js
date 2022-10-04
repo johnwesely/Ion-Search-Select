@@ -1,10 +1,10 @@
-///export default {
-    ///install(app, options) {
-        ///app.component('ion-search-select', IonSearchSelect);
-    ///}
-///};
+// export default {
+    // install(app, options) {
+        // app.component('ion-search-select', IonSearchSelect);
+    // }
+// };
 
-/* eslint-disable */
-// @ts-ignore
-export { default as IonSearchSelect } from './IonSearchSelect.vue';
-// @ts-ignore
+import IonSearchSelect from './IonSearchSelect.vue';
+import IonSearchSelectModal from './IonSearchSelectModal.vue';
+export { IonSearchSelect, IonSearchSelectModal }
+// export { default as IonSearchSelect } from './IonSearchSelect.vue';

@@ -16,7 +16,7 @@
 <script lang="ts">
 import { defineComponent, toRef } from "vue";
 import { modalController, IonIcon } from '@ionic/vue';
-import SearchSelectModal from "./IonSearchSelectModal.vue";
+import IonSearchSelectModal from "./IonSearchSelectModal.vue";
 import { caretDownOutline } from "ionicons/icons";
 import { addIcons } from "ionicons";
 import { useModelWrapper } from "./modelWrapper";
@@ -42,7 +42,7 @@ export default defineComponent({
 
         const openModal = async () => {
             const modal = await modalController.create({
-                component: SearchSelectModal,
+                component: IonSearchSelectModal,
                 componentProps: { 
                     optionsProp: options,
                     selectedOptionProp: selectedOption.value,
