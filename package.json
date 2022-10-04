@@ -1,9 +1,10 @@
 {
   "name": "ion-search-select",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
-  "main": "./src.main.js",
+  "main": "./dist/ion-search-select.umd.cjs",
+  "module": "./dist/ion-search-select.js",
   "exports": {
     ".": {
       "import": "./dist/ion-search-select.js",
