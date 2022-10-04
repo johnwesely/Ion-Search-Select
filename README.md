@@ -1,7 +1,8 @@
-# Vue 3 + Vite
+# Searchable Select for Ionic Vue
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is a search select component with a simple API for Ionic Vue apps built using ionic components to maintain a consistent look throughout your app.
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+# Instructions for uses
+1. Install with npm install ion-search-select
+2. import component with 'import { IonSearchSelect }' and register in components array
+3. Include component in template with '<ion-search-select></ion-search-select>' with props 'v-model' for variable holding selected value, 'field-name-prop' for name of field, and 'options-prop' with an array of options
