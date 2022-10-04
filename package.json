@@ -13,13 +13,14 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@ionic/vue": "^6.2.2",
     "vue": "^3.2.37",
-    "vue-router": "^4.1.5"
+    "vue-router": "^4.1.5",
+    "ion-search-select": "1.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.0",
