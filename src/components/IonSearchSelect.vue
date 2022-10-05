@@ -10,6 +10,7 @@
             name="caret-down-outline"
             style="margin-left: 8px; font-size: 14px; color: grey; padding-top: 8px"
         ></ion-icon>
+
         <ion-modal :is-open="isOpen" @did-dismiss="submit">
             <ion-header>
                 <ion-toolbar>
@@ -37,12 +38,13 @@
                 </ion-item>
             </ion-content>
         </ion-modal>
+
     </div>
 </template>
 
 <script lang="ts">
 import { computed, defineComponent, toRef, ref } from "vue";
-import { IonButton, IonInput, IonContent, IonHeader, IonTitle, IonToolbar, IonItem, IonLabel, modalController, IonModal, IonIcon } from '@ionic/vue';
+import { IonButton, IonInput, IonContent, IonHeader, IonTitle, IonToolbar, IonItem, IonLabel, IonModal, IonIcon } from '@ionic/vue';
 import { caretDownOutline } from "ionicons/icons";
 import { addIcons } from "ionicons";
 import { useModelWrapper } from "../modelWrapper.js";
@@ -98,25 +100,6 @@ export default defineComponent({
 
             return filteredOptions;
         }
-
-        /*
-        const openModal = async () => {
-            const modal = await modalController.create({
-                component: SearchSelectModal,
-                componentProps: { 
-                    optionsProp: options,
-                    selectedOptionProp: selectedOption.value,
-                    fieldNameProp: fieldName,
-                }
-            });
-
-            modal.present();
-
-            const { data } = await modal.onWillDismiss();
-
-            if (data) selectedOption.value = data;
-        }
-        */
 
         return {
             filteredOptions: computed(() => {
