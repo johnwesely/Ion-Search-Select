@@ -43,10 +43,9 @@
 <script lang="ts">
 import { computed, defineComponent, toRef, ref } from "vue";
 import { IonButton, IonInput, IonContent, IonHeader, IonTitle, IonToolbar, IonItem, IonLabel, modalController, IonModal, IonIcon } from '@ionic/vue';
-import SearchSelectModal from "./SearchSelectModal.vue";
 import { caretDownOutline } from "ionicons/icons";
 import { addIcons } from "ionicons";
-import { useModelWrapper } from "@/services/modelWrapper.service";
+import { useModelWrapper } from "../modelWrapper.js";
 
 addIcons({
     "caret-down-outline": caretDownOutline 
